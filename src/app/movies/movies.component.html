@@ -1,0 +1,17 @@
+
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let item of movies"  routerLink="/detail/{{item.id}}"
+     class="list-group-item"
+     >
+      <span class="badge badge-primary">{{item.id}}</span>{{item.name}}
+      <span class="close">x</span>
+    </li>
+  </ul>
+</div>
+
+<!-- <movie></movie>
+<movie></movie> -->
